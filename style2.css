@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    background-image: url(css/img/body.jpg);
+}
+.brand img{
+    width: 80px;
+    height: 80px;
+}
+/*.imagenes{
+    height: 400px;
+    width: 300px;
+}*/
+li{
+    list-style: none;
+}
+.imagenes{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 70%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite 
+    alternate linear;
+    width: 400%;
+}
+.slide img{
+    height: 70vh;
+}
+.btn-group{
+    margin-top: 500px;
+    text-align: left;
+    
+}
+.footer-link li{
+    list-style: none;
+}
+
+    
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 50%;
+    height: 50%;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300;}
+    100%{margin-left: -300%;}
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer{
+    background-color: #2426;
+    padding: 80px 0;
+    
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-links h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid#00c3ff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+.footer-links ul li a{
+    font-size: 10px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover{
+    color: white;
+    padding-left: 6px;
+}
+.social-links a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255,  255, .2);
+    margin: 0 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+}
+.social-links a:hover{
+    background-color: #00c3ff;
+}
+@media(max-width:991px){
+    .footer{text-align: center;
+  }
+  .footer-links{
+
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
